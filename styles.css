@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center; 
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+#about, #sports {
+    border: 2px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+#about {
+    background-color: #f0e68c; 
+    border-color: #d1a800; 
+}
+
+
+#sports {
+    background-color: #add8e6; 
+    border-color: #007bb8; 
+}
+
+.card {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+.gallery {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.gallery img {
+    width: 100%; 
+    max-width: 300px; 
+    height: auto; 
+    margin: 10px 0; 
+}
+
+.gallery p {
+    text-align: center; 
+    font-weight: bold; 
+}
+
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block; 
+        margin-bottom: 5px;
+    }
+
+    .gallery {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .gallery img {
+        max-width: 95%; 
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: 1.5em; 
+    }
+
+    nav ul li {
+        margin-right: 0; 
+    }
+
+    .card {
+        padding: 5px; 
+    }
+}
